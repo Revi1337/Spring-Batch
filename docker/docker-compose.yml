@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  spring-batch-test:
+    container_name: spring_batch
+    image: mysql:8-oracle
+    environment:
+      MYSQL_DATABASE: "spring_batch"
+      MYSQL_ROOT_PASSWORD: "1234"
+#      TZ: "Asia/Seoul"
+    ports:
+      - "4447:3306"
+#    command:
+#      - "--character-set-server=utf8mb4"
+#      - "--collation-server=utf8mb4_unicode_ci"
